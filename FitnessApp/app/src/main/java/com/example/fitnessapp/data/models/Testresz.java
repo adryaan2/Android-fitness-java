@@ -1,6 +1,5 @@
 package com.example.fitnessapp.data.models;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -8,6 +7,6 @@ import androidx.room.PrimaryKey;
 public class Testresz {
     @PrimaryKey
     public int testreszId;
-    @ColumnInfo
+
     public String megnev;
 }
