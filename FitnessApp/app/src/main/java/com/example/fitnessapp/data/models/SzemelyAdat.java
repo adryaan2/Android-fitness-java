@@ -19,4 +19,14 @@ public class SzemelyAdat {
     public double suly;
 
     public double kaloria;
+
+    public SzemelyAdat(int szemelyId, String nev, int kor, boolean nem, int magassag, double suly, double kaloria) {
+        this.szemelyId = szemelyId;
+        this.nev = nev;
+        this.kor = kor;
+        this.nem = nem;
+        this.magassag = magassag;
+        this.suly = suly;
+        this.kaloria = kaloria;
+    }
 }
