@@ -8,3 +8,4 @@ Csapattagok:
 - Kovács Adrián
 - Kovács Evelin
 - Kovács Krisztián
+- Dóczi Dávid
