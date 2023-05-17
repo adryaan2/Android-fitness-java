@@ -39,15 +39,14 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        myDB= Room.databaseBuilder(getApplicationContext(),
-                MyDB.class, "dbfajl")
-                .build();
+        myDB= MyDB.getDb(this);
         SzemelyDao szemelyDao = myDB.szemelyDao();
-        szemelyDao.addPerson(new SzemelyAdat(1,"Név",21,true, 170,34.565,223.34));
-        szemelyDao.addPerson(new SzemelyAdat(2,"Nééév",21,false, 170,24.565,223.34));
+        szemelyDao.addPerson(new SzemelyAdat(5,"Név",21,true, 170,34.565,223.34));
+        szemelyDao.addPerson(new SzemelyAdat(6,"Nééév",21,false, 170,24.565,223.34));
         for(SzemelyAdat akt : szemelyDao.getAllPerson()){
             Log.d("szemely",akt.szemelyId+" "+akt.nev+" "+akt.nem+" "+akt.suly+" kg ");
         }
+
     }
 
 }
