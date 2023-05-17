@@ -21,9 +21,6 @@ public interface GyakorlatDao {
     @Query("SELECT * FROM gyakorlatok WHERE gyakorlatNev LIKE '%'||:keres||'%'")
     public Gyakorlat[] getGyakorlatByNev(String keres);
 
-    @Query("SELECT * FROM gyakorlatok WHERE testreszId=:testreszId")
-    public Gyakorlat[] getGyakorlatByTestreszId(int testreszId);
-
     @Transaction
     @Query("SELECT * FROM Testresz")
     public List<TestreszEdzesekkel> getTestreszekEdzesekkel();
