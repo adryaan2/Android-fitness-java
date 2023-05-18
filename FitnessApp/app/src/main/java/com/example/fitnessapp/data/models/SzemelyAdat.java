@@ -12,6 +12,10 @@ public class SzemelyAdat {
 
     public int kor;
 
+    /**
+     * true=nő,
+     * false=férfi
+     */
     public boolean nem;
 
     public int magassag;
