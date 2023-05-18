@@ -14,7 +14,7 @@ import com.example.fitnessapp.data.models.Testresz;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Gyakorlat.class, SzemelyAdat.class, Testresz.class, GyakorlatTestreszKapcsolat.class}, version = 1)
+@Database(entities = {Gyakorlat.class, SzemelyAdat.class, Testresz.class, GyakorlatTestreszKapcsolat.class}, version = 2)
 public abstract class MyDB extends RoomDatabase {
     public abstract GyakorlatDao gyakorlatDao();
     public abstract SzemelyDao szemelyDao();
@@ -38,6 +38,7 @@ public abstract class MyDB extends RoomDatabase {
                             MyDB.class,
                             "FitnessAppDb.db").createFromAsset("databases/FitnessAppDb.db")
                             .allowMainThreadQueries()
+                            .fallbackToDestructiveMigration()
                             .build();
                 }
             }

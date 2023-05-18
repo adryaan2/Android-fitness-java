@@ -15,13 +15,17 @@ public interface GyakorlatDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public void addGyakorlat(Gyakorlat ujGyakorlat);
 
-    @Query("SELECT * FROM gyakorlatok")
+    @Query("SELECT * FROM gyakorlat")
     public Gyakorlat[] getAllGyakorlat();
 
-    @Query("SELECT * FROM gyakorlatok WHERE gyakorlatNev LIKE '%'||:keres||'%'")
+    @Query("SELECT * FROM gyakorlat WHERE gyakorlatNev LIKE '%'||:keres||'%'")
     public Gyakorlat[] getGyakorlatByNev(String keres);
 
     @Transaction
     @Query("SELECT * FROM Testresz")
     public List<TestreszEdzesekkel> getTestreszekEdzesekkel();
+
+    @Transaction
+    @Query("SELECT * FROM Testresz WHERE Testresz.testreszId=:testreszId")
+    public TestreszEdzesekkel getTestreszEdzesekkelById(int testreszId);
 }
