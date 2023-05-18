@@ -8,11 +8,9 @@ public class Gyakorlat {
     @PrimaryKey
     public int gyakorlatId;
 
-    public int testreszId;
-
     public String gyakorlatNev;
 
-    public String leires;
+    public String leiras;
 
     public int ismetlesekSzama;
 
