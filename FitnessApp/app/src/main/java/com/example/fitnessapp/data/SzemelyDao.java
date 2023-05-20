@@ -18,4 +18,13 @@ public interface SzemelyDao {
 
     @Query("SELECT * FROM SzemelyAdat")
     public SzemelyAdat[] getAllPerson();
+
+    @Query("SELECT COUNT(*) FROM SzemelyAdat")
+    public int countOfPerson();
+
+    @Query("SELECT * FROM SzemelyAdat WHERE szemelyId=:id")
+    public SzemelyAdat getPersonById(int id);
+
+    @Query("DELETE FROM SzemelyAdat")
+    public void truncatePerson();
 }
