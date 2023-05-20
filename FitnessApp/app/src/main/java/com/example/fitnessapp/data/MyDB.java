@@ -10,6 +10,7 @@ import com.example.fitnessapp.data.models.Gyakorlat;
 import com.example.fitnessapp.data.models.GyakorlatTestreszKapcsolat;
 import com.example.fitnessapp.data.models.SzemelyAdat;
 import com.example.fitnessapp.data.models.Testresz;
+import com.example.fitnessapp.data.models.TestreszDao;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,6 +19,7 @@ import java.util.concurrent.Executors;
 public abstract class MyDB extends RoomDatabase {
     public abstract GyakorlatDao gyakorlatDao();
     public abstract SzemelyDao szemelyDao();
+    public abstract TestreszDao testreszDao();
 
     private static volatile MyDB myDb;
     private static final int NUMBER_OF_THREADS = 4;
