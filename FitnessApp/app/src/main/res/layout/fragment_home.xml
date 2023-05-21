@@ -7,7 +7,7 @@
     tools:context=".ui.home.HomeFragment">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextSearch"
         android:layout_width="224dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
@@ -15,13 +15,13 @@
         android:ems="10"
         android:hint="Kereshetsz gyakorlatra"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSearchLikeString"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSearchLikeString"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -31,20 +31,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spinnerTestresz"
         android:layout_width="224dp"
         android:layout_height="49dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFilterByBpart"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonFilterByBpart"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -52,7 +52,7 @@
         android:text="Szűrés"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSearchLikeString"
         app:layout_constraintVertical_bias="0.133" />
 
     <TextView
@@ -66,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

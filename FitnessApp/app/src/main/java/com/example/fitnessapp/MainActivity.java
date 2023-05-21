@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         TestreszEdzesekkel hasEdzes = gyakDao.getTestreszEdzesekkelById(3);
         Log.d("edzés: has",hasEdzes.testresz.megnev + ": " + hasEdzes.gyakorlatok.stream().map(x->x.gyakorlatNev).collect(Collectors.joining(", ")));
 
-
+        myDB.szemelyDao().truncatePerson(); //  -------- KIVENNI ------------
     }
 
 }
