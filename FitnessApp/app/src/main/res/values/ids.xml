@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="elemTextView" type="id" />
+    <item name="kepTextView" type="id" />
+    <item name="ismetlesTextView" type="id" />
+</resources>
