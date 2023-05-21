@@ -26,9 +26,6 @@ import java.util.stream.Collectors;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private RecyclerView MyRecyclerView;
-    private RecyclerView.Adapter MyAdapter;
-    private RecyclerView.LayoutManager MyLayoutManager;
     MyDB myDB;
 
     @Override

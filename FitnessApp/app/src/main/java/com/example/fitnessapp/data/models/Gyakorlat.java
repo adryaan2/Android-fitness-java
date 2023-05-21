@@ -18,4 +18,27 @@ public class Gyakorlat {
     public int ismetlesekSzama;
 
     public String mediaURL;
+
+
+    public int getGyakorlatId() {
+        return gyakorlatId;
+    }
+
+    @NonNull
+    public String getGyakorlatNev() {
+        return gyakorlatNev;
+    }
+
+    @NonNull
+    public String getLeiras() {
+        return leiras;
+    }
+
+    public int getIsmetlesekSzama() {
+        return ismetlesekSzama;
+    }
+
+    public String getMediaURL() {
+        return mediaURL;
+    }
 }

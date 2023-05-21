@@ -9,6 +9,11 @@
         android:id="@id/kepTextView"
         android:layout_width="130dp"
         android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#050505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:text="Android" />
 
@@ -16,19 +21,23 @@
         android:id="@id/elemTextView"
         android:layout_width="150dp"
         android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/kepTextView"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:text="Proba"/>
+        tools:text="Proba" />
 
     <TextView
         android:id="@id/ismetlesTextView"
-        android:layout_width="130dp"
+        android:layout_width="113dp"
         android:layout_height="match_parent"
-
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="0dp"
         tools:text="Valami" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
